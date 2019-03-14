@@ -1,0 +1,29 @@
+ul.search-result {
+  margin-top: 0;
+  padding-left: 0;
+  li {
+    border: 1px 1px 0 1px solid #808080;
+    width: 195px;
+    padding: 5px;
+    height: 16px;
+    cursor: pointer;
+    background-color: #fff;
+    list-style-type: none;
+    &:hover {
+      background-color: #607d8b;
+    }
+    a {
+      color: #888888;
+      text-decoration: none;
+      display: block;
+      &:active, &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+#search-box {
+  width: 200px;
+  height: 20px;
+}

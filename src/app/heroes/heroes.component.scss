@@ -1,0 +1,86 @@
+.selected {
+  background-color: #cfd8dc !important;
+  color: #fff;
+}
+
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+  .badge {
+    display: inline-block;
+    font-size: small;
+    color: #fff;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #6078db;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: 0.8em;
+    border-radius: 4px 0 0 4px;
+
+  }
+
+  a {
+      color: #888;
+      text-decoration: none;
+      display: block;
+      position: relative;
+      width: 250px;
+
+    &:hover {
+      color: #6078db;
+    }
+  }
+
+  .text {
+    position: relative;
+    top: -3px;
+  }
+  li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #eee;
+    margin: 0.5em;
+    padding: 0.3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    &:hover {
+      color: #6078db;
+      background-color: #dddddd;
+      left: 0.1em
+    }
+    &.selected:hover {
+      background-color: #bbd8dc !important;
+      color: #fff;
+      left: 0.1em;
+
+    }
+  }
+}
+
+button {
+  background-color: #eeeeee;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 4px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+  cursor: hand;
+  &:hover {
+    background-color: #cfd8dc;
+  }
+  &.delete {
+    position: relative;
+    left: 194px;
+    top: -32px;
+    color: #fff;
+    background-color: #808080 !important;
+  }
+}
